@@ -1,4 +1,4 @@
-rpm_package "ruby-shadow.x86_64" do
+rpm_package "ncdu" do
  action :install
 end
 
