@@ -1,4 +1,4 @@
-package "ruby-shadow.x86_64" do
+rpm_package "ruby-shadow" do
  action :install
 end
 
