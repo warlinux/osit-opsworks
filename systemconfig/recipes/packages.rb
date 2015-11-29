@@ -1,5 +1,5 @@
 #basic packages
-['ncdu','strace','htop'].each do |package|
+['ncdu','strace','htop','ruby-shadow'].each do |package|
 	package package
 end
 
