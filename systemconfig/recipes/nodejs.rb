@@ -27,5 +27,6 @@ var server = app.listen(80, function () {
 end
 
 execute 'nodeexec' do
+	cwd '/opt/nodejs'
         command '/usr/bin/node /opt/nodejs/hello-world.js &'
 end
