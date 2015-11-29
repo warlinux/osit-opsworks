@@ -23,5 +23,7 @@ var server = app.listen(3000, function () {
 end
 
 execute 'helloworldjs' do
+	command "mkdir /opt/nodejs"
+	cwd '/opt/nodejs/'
         command 'node /opt/nodejs/hell-world.js'
 end
