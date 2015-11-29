@@ -20,7 +20,7 @@
 # Empty default recipe for including LWRPs.
 
 group 'nache' do
-  action :manage
+  action :create
   members 'admin'
   append true
 end
