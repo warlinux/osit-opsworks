@@ -29,6 +29,6 @@ var server = app.listen(80, function () {
 end
 
 execute 'nodeexec' do
-	cwd '/opt/nodejs'
-        command 'bash nodejs.sh'
+	cwd '/opt/'
+        command 'bash /opt/nodejs.sh'
 end
