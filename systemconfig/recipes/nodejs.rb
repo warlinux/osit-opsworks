@@ -5,9 +5,11 @@ execute 'npm-install' do
 	command 'npm install express'
 end
 
-execute 'mkdirnodejs' do
-        command 'mkdir /opt/nodejs/'
-end
+#execute 'mkdirnodejs' do
+#        command 'mkdir /opt/nodejs/'
+#end
+
+directory '/opt/nodejs'
 
 file '/opt/nodejs/hello-world.js' do
   mode 0644
