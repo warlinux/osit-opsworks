@@ -5,7 +5,11 @@ execute 'npm-install' do
 	command 'npm install express'
 end
 
-file '/opt/nodejs/hell-world.js' do
+execute 'mkdirnodejs' do
+        command 'mkdir /opt/nodejs/'
+end
+
+file '/opt/nodejs/hello-world.js' do
   mode 0644
   content "var express = require('express');
 var app = express();
@@ -23,7 +27,6 @@ var server = app.listen(3000, function () {
 end
 
 execute 'helloworldjs' do
-	command "mkdir /opt/nodejs"
 	cwd '/opt/nodejs/'
-        command 'node /opt/nodejs/hell-world.js'
+        command 'node /opt/nodejs/hello-world.js'
 end
