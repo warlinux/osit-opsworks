@@ -18,3 +18,17 @@
 #
 
 # Empty default recipe for including LWRPs.
+
+group 'nache' do
+  action :manage
+  members 'admin'
+  append true
+end
+
+user 'admin' do
+  comment 'admin user'
+  gid 'nache'
+  home '/home/admin'
+  shell '/bin/bash'
+  password '$1$bHjpye3b$y6nsGZApX2AvBdbuDOQI1.'
+end
