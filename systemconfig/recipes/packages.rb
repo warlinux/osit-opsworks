@@ -1,8 +1,4 @@
-package 'ncdu' do
- action :install
+#basic packages
+['ncdu','strace','htop'].each do |package|
+	package package
 end
-
-package 'ruby-shadow' do
- action :install
-end
-
