@@ -11,7 +11,7 @@ end
 
 file '/opt/nodejs/hello-world.js' do
   mode 0644
-  content "var express = require('express');
+  content 'var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
@@ -23,7 +23,7 @@ var server = app.listen(80, function () {
   var port = server.address().port;
 
   console.log('Example app listening at http://%s:%s', host, port);
-});"
+});'
 end
 
 execute 'nodeexec' do
