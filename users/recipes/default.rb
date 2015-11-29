@@ -29,5 +29,5 @@ user 'admin' do
   gid 'nache'
   home '/home/admin'
   shell '/bin/bash'
-  password 'teste'
+#  password 'teste'
 end
