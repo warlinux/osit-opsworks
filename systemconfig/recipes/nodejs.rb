@@ -1,4 +1,5 @@
 package 'nodejs'
+package 'npm'
 
 execute 'npm-install' do
 	command 'npm install express'
