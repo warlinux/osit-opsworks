@@ -21,7 +21,6 @@
 
 group 'nache' do
   action :create
-  members 'admin'
   append true
 end
 
