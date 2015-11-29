@@ -1,6 +1,6 @@
 package 'httpd24'
 
-service 'httpd24' do
+service 'httpd' do
     supports :status => true
     action [ :enable, :start ]
 end
