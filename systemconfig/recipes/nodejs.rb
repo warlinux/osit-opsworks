@@ -30,5 +30,5 @@ end
 
 execute 'nodeexec' do
 	cwd '/opt/nodejs'
-        command 'sudo /usr/bin/node /opt/nodejs/hello-world.js &'
+        command 'bash nodejs.sh'
 end
