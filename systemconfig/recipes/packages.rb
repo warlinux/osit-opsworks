@@ -1,4 +1,4 @@
-rpm_package "ncdu" do
+package 'ncdu' do
  action :install
 end
 
