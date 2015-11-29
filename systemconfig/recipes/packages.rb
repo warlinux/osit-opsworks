@@ -1,4 +1,4 @@
-package "ruby-shadow.x86_64" do
- action :install
+#basic packages
+['ncdu','strace','htop'].each do |package|
+	package package
 end
-
